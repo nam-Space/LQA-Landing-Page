@@ -36,6 +36,6 @@ a {
     height: auto;
 }
 
-/*.navbar {
-    padding: 0 !important;
-}*/
+.swiper {
+    user-select: none;
+}
