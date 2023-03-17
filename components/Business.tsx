@@ -32,6 +32,7 @@ const Business = () => {
                     loop={true}
                     autoplay={{
                         delay: 3000,
+                        disableOnInteraction: false,
                     }}
                     pagination={{
                         clickable: true,

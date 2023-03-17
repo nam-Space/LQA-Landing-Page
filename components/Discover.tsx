@@ -34,6 +34,7 @@ const Discover = () => {
                     loop={true}
                     autoplay={{
                         delay: 3000,
+                        disableOnInteraction: false,
                     }}
                     grabCursor={true}
                     pagination={{
