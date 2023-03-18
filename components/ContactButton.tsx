@@ -7,13 +7,13 @@ import santaImg from "../assets/img/santa.webp";
 const ContactButton = () => {
     return (
         <>
-            <div className="w-[160px] fixed bottom-[100px] right-[-20px] z-[100]">
+            <div className="flex items-center justify-center w-[100px] md:w-[140px] fixed bottom-[100px] right-0 z-[100]">
                 <Image src={santaImg} alt="" />
             </div>
             <FloatButton
                 icon={<FaQuestionCircle />}
                 type="primary"
-                className="right-[32px] w-[60px] h-[60px]"
+                className="right-[21px] md:right-[40px] w-[60px] h-[60px]"
             />
         </>
     );
