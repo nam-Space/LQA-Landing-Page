@@ -32,6 +32,11 @@ a {
     z-index: 5;
 }
 
+div .navbar-light .navbar-toggler {
+    color: #145b96;
+    border: none;
+}
+
 .fixed-top {
     height: auto;
 }
