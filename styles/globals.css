@@ -35,6 +35,7 @@ a {
 div .navbar-light .navbar-toggler {
     color: #145b96;
     border: none;
+    box-shadow: none;
 }
 
 .fixed-top {
