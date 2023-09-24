@@ -9,11 +9,6 @@ import { useState, useEffect } from "react";
 import { Helmet } from 'react-helmet';
 
 export default function Home() {
-    const [url, setUrl] = useState('');
-
-    useEffect(() => {
-        setUrl(window.location.href);
-    }, [url]);
 
     return (
         <div>
@@ -23,7 +18,6 @@ export default function Home() {
                     name="description"
                     content="Made by Nam Nguyễn"
                 />
-                <link rel="canonical" href={url} />
                 <link rel="icon" href="/favicon.ico" />
                 <link
                     href="https://unpkg.com/aos@2.3.1/dist/aos.css"
