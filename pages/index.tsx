@@ -7,6 +7,7 @@ import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import SnowfallEffect from "../components/SnowfallEffect";
 import { useState, useEffect } from "react";
 import { Helmet } from 'react-helmet';
+import ImageOg from '../assets/img/cyber-security.jpg'
 
 export default function Home() {
 
@@ -23,7 +24,7 @@ export default function Home() {
                     href="https://unpkg.com/aos@2.3.1/dist/aos.css"
                     rel="stylesheet"
                 ></link>
-                <meta property="og:image" content={'https://i.pinimg.com/originals/58/8d/d6/588dd6f9fe27532c7accc7f8c46566ca.jpg'} />
+                <meta property="og:image" content={ImageOg.src} />
                 <meta property="og:image:width" content="300" />
                 <meta property="og:image:height" content="150" />
             </Head>
