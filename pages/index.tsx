@@ -10,6 +10,14 @@ import { Helmet } from 'react-helmet';
 import ImageOg from '../assets/img/cyber-security.jpg'
 
 export default function Home() {
+  useEffect(() => {
+    window.gtag('consent', 'default', {
+      'ad_storage': 'granted',
+      'ad_user_data': 'granted',
+      'ad_personalization': 'granted',
+      'analytics_storage': 'granted'
+    });
+  }, [])
 
   return (
     <div>
