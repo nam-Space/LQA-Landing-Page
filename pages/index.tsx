@@ -5,20 +5,10 @@ import LqaBody from "../components/Body/LqaBody";
 import Footer from "../components/Footer/Footer";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import SnowfallEffect from "../components/SnowfallEffect";
-import { useState, useEffect } from "react";
 import { Helmet } from 'react-helmet';
 import ImageOg from '../assets/img/cyber-security.jpg'
 
 export default function Home() {
-  useEffect(() => {
-    window.gtag('consent', 'default', {
-      'ad_storage': 'denied',
-      'ad_user_data': 'denied',
-      'ad_personalization': 'denied',
-      'analytics_storage': 'denied'
-    });
-  }, [])
-
   return (
     <div>
       <Head>
@@ -46,6 +36,23 @@ export default function Home() {
             `,
           }}
         ></script>
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            
+            gtag('consent', 'default', {
+              'ad_storage': 'denied',
+              'ad_user_data': 'denied',
+              'ad_personalization': 'denied',
+              'analytics_storage': 'denied'
+            });
+            `,
+          }}
+        ></script>
+
       </Head>
       <Helmet>
         <script type="application/ld+json">
