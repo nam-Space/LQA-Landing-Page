@@ -27,6 +27,17 @@ export default function Home() {
         <meta property="og:image" content={ImageOg.src} />
         <meta property="og:image:width" content="300" />
         <meta property="og:image:height" content="150" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8HGH3VEBS"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-E8HGH3VEBS');
+            `,
+          }}
+        ></script>
       </Head>
       <Helmet>
         <script type="application/ld+json">
@@ -54,15 +65,6 @@ export default function Home() {
             }
           `}
         </script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8HGH3VEBS"></script>
-        <script dangerouslySetInnerHTML={{
-          __html: `
-      window.dataLayer = window.dataLayer || [];
-      function ga(){dataLayer.push(arguments);}
-      ga('create', 'G-E8HGH3VEBS', 'auto');
-      ga('send', 'pageview');
-    `,
-        }}></script>
       </Helmet>
 
       <SnowfallEffect />
