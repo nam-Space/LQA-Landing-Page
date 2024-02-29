@@ -48,7 +48,7 @@ export default function Home() {
               'ad_user_data': 'denied',
               'ad_personalization': 'denied',
               'analytics_storage': 'denied',
-              'region': ['AD', 'AL', 'AM', 'AT', 'AZ', 'BA', 'BE', 'BG', 'BY', 'CH', 'CY', 'CZ', 'DE', 'DK', 'EE', 'ES', 'FI', 'FR', 'GB', 'GE', 'GR', 'HR', 'HU', 'IE', 'IS', 'IT', 'KZ', 'KG', 'LI', 'LT', 'LU', 'LV', 'MC', 'MD', 'ME', 'MK', 'MT', 'NL', 'NO', 'PL', 'PT', 'RO', 'RS', 'RU', 'SE', 'SI', 'SK', 'SM', 'TJ', 'TM', 'TR', 'UA', 'UZ', 'VA']
+              'region': ['EU']
             });
             `,
           }}
